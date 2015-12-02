@@ -7,12 +7,56 @@
 //
 
 import UIKit
+import WebKit
+
 
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var objects = [AnyObject]()
 
+  
+  func showWebView() {
+    
+    let url = "https://bigbearlabs.com"
+    let nsURL = NSURL(string:url)
+    let request = NSURLRequest(URL:nsURL!)
+    
+//    let frame = CGRect(x: 0, y: 0, width: 800, height:600)
+    let frame = self.view.bounds
+    let config = WKWebViewConfiguration()
+    let web = WKWebView(frame: frame, configuration: nil)
+    
+//    [self.wkWebView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+//    [self.wkWebView setNavigationDelegate:self];
+//    [self.wkWebView setUIDelegate:self];
+//    [self.wkWebView setMultipleTouchEnabled:YES];
+//    [self.wkWebView setAutoresizesSubviews:YES];
+//    [self.wkWebView.scrollView setAlwaysBounceVertical:YES];
+//    [self.view addSubview:self.wkWebView];
+    self.view.addSubview(web)
+    web.frame = self.view.bounds
+    
+
+    web.loadRequest(request)
+    
+    self.webView = web
+  }
+  
+  var webView = WKWebView?
+  
+  func showWebView__() {
+    self.webView = WKWebView()
+    webView?.backgroundColor = UIColor.whiteColor()
+    webView?.autoresizingMask = UIViewAutoresizing.FlexibleWidth
+    webView?.autoresizingMask = UIViewAutoresizing.FlexibleHeight
+    let url = NSURL(string:"https://www.bignerdranch.com")
+    let req = NSURLRequest(URL:url!)
+    webView?.loadRequest(req)
+    
+    self.view.addSubview((webView)!)
+
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,6 +69,9 @@ class MasterViewController: UITableViewController {
         let controllers = split.viewControllers
         self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
     }
+
+    
+    showWebView()
   }
 
   override func viewWillAppear(animated: Bool) {

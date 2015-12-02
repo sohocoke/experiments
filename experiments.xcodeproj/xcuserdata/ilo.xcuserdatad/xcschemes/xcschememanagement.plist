@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OSXExperiments.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>experiments.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>51ADC7D71C07F770002B3A1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51ADC7E51C07F770002B3A1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51ADC7F01C07F770002B3A1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>51F785D81C07E30D003E37A2</key>
 		<dict>
 			<key>primary</key>

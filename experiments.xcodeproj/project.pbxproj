@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51ADC7DB1C07F770002B3A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADC7DA1C07F770002B3A1D /* AppDelegate.swift */; };
+		51ADC7DD1C07F770002B3A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ADC7DC1C07F770002B3A1D /* Assets.xcassets */; };
+		51ADC7E01C07F770002B3A1D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51ADC7DE1C07F770002B3A1D /* MainMenu.xib */; };
+		51ADC7EB1C07F770002B3A1D /* OSXExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADC7EA1C07F770002B3A1D /* OSXExperimentsTests.swift */; };
+		51ADC7F61C07F770002B3A1D /* OSXExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADC7F51C07F770002B3A1D /* OSXExperimentsUITests.swift */; };
 		51F785DD1C07E30D003E37A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F785DC1C07E30D003E37A2 /* AppDelegate.swift */; };
 		51F785DF1C07E30D003E37A2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F785DE1C07E30D003E37A2 /* MasterViewController.swift */; };
 		51F785E11C07E30D003E37A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F785E01C07E30D003E37A2 /* DetailViewController.swift */; };
@@ -18,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		51ADC7E71C07F770002B3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51F785D11C07E30C003E37A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51ADC7D71C07F770002B3A1D;
+			remoteInfo = OSXExperiments;
+		};
+		51ADC7F21C07F770002B3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51F785D11C07E30C003E37A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51ADC7D71C07F770002B3A1D;
+			remoteInfo = OSXExperiments;
+		};
 		51F785F01C07E30D003E37A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51F785D11C07E30C003E37A2 /* Project object */;
@@ -35,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51ADC7D81C07F770002B3A1D /* OSXExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51ADC7DA1C07F770002B3A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51ADC7DC1C07F770002B3A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51ADC7DF1C07F770002B3A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		51ADC7E11C07F770002B3A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51ADC7E61C07F770002B3A1D /* OSXExperimentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXExperimentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51ADC7EA1C07F770002B3A1D /* OSXExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXExperimentsTests.swift; sourceTree = "<group>"; };
+		51ADC7EC1C07F770002B3A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51ADC7F11C07F770002B3A1D /* OSXExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXExperimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51ADC7F51C07F770002B3A1D /* OSXExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXExperimentsUITests.swift; sourceTree = "<group>"; };
+		51ADC7F71C07F770002B3A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51F785D91C07E30D003E37A2 /* experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F785DC1C07E30D003E37A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F785DE1C07E30D003E37A2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +79,31 @@
 		51F785FA1C07E30D003E37A2 /* experimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = experimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F785FE1C07E30D003E37A2 /* experimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experimentsUITests.swift; sourceTree = "<group>"; };
 		51F786001C07E30D003E37A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F7860C1C07E34D003E37A2 /* WKWebView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = WKWebView.playground; path = experiments/WKWebView.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		51ADC7D51C07F770002B3A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7E31C07F770002B3A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7EE1C07F770002B3A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F785D61C07E30D003E37A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +128,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51ADC7D91C07F770002B3A1D /* OSXExperiments */ = {
+			isa = PBXGroup;
+			children = (
+				51ADC7DA1C07F770002B3A1D /* AppDelegate.swift */,
+				51ADC7DC1C07F770002B3A1D /* Assets.xcassets */,
+				51ADC7DE1C07F770002B3A1D /* MainMenu.xib */,
+				51ADC7E11C07F770002B3A1D /* Info.plist */,
+			);
+			path = OSXExperiments;
+			sourceTree = "<group>";
+		};
+		51ADC7E91C07F770002B3A1D /* OSXExperimentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				51ADC7EA1C07F770002B3A1D /* OSXExperimentsTests.swift */,
+				51ADC7EC1C07F770002B3A1D /* Info.plist */,
+			);
+			path = OSXExperimentsTests;
+			sourceTree = "<group>";
+		};
+		51ADC7F41C07F770002B3A1D /* OSXExperimentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				51ADC7F51C07F770002B3A1D /* OSXExperimentsUITests.swift */,
+				51ADC7F71C07F770002B3A1D /* Info.plist */,
+			);
+			path = OSXExperimentsUITests;
+			sourceTree = "<group>";
+		};
 		51F785D01C07E30C003E37A2 = {
 			isa = PBXGroup;
 			children = (
+				51F7860C1C07E34D003E37A2 /* WKWebView.playground */,
+				51ADC7D91C07F770002B3A1D /* OSXExperiments */,
 				51F785DB1C07E30D003E37A2 /* experiments */,
 				51F785F21C07E30D003E37A2 /* experimentsTests */,
 				51F785FD1C07E30D003E37A2 /* experimentsUITests */,
+				51ADC7E91C07F770002B3A1D /* OSXExperimentsTests */,
+				51ADC7F41C07F770002B3A1D /* OSXExperimentsUITests */,
 				51F785DA1C07E30D003E37A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +177,9 @@
 				51F785D91C07E30D003E37A2 /* experiments.app */,
 				51F785EF1C07E30D003E37A2 /* experimentsTests.xctest */,
 				51F785FA1C07E30D003E37A2 /* experimentsUITests.xctest */,
+				51ADC7D81C07F770002B3A1D /* OSXExperiments.app */,
+				51ADC7E61C07F770002B3A1D /* OSXExperimentsTests.xctest */,
+				51ADC7F11C07F770002B3A1D /* OSXExperimentsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +219,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		51ADC7D71C07F770002B3A1D /* OSXExperiments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51ADC7FE1C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperiments" */;
+			buildPhases = (
+				51ADC7D41C07F770002B3A1D /* Sources */,
+				51ADC7D51C07F770002B3A1D /* Frameworks */,
+				51ADC7D61C07F770002B3A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXExperiments;
+			productName = OSXExperiments;
+			productReference = 51ADC7D81C07F770002B3A1D /* OSXExperiments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51ADC7E51C07F770002B3A1D /* OSXExperimentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51ADC7FF1C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsTests" */;
+			buildPhases = (
+				51ADC7E21C07F770002B3A1D /* Sources */,
+				51ADC7E31C07F770002B3A1D /* Frameworks */,
+				51ADC7E41C07F770002B3A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51ADC7E81C07F770002B3A1D /* PBXTargetDependency */,
+			);
+			name = OSXExperimentsTests;
+			productName = OSXExperimentsTests;
+			productReference = 51ADC7E61C07F770002B3A1D /* OSXExperimentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51ADC7F01C07F770002B3A1D /* OSXExperimentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51ADC8001C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsUITests" */;
+			buildPhases = (
+				51ADC7ED1C07F770002B3A1D /* Sources */,
+				51ADC7EE1C07F770002B3A1D /* Frameworks */,
+				51ADC7EF1C07F770002B3A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51ADC7F31C07F770002B3A1D /* PBXTargetDependency */,
+			);
+			name = OSXExperimentsUITests;
+			productName = OSXExperimentsUITests;
+			productReference = 51ADC7F11C07F770002B3A1D /* OSXExperimentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		51F785D81C07E30D003E37A2 /* experiments */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F786031C07E30D003E37A2 /* Build configuration list for PBXNativeTarget "experiments" */;
@@ -194,6 +335,17 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Big Bear Labs";
 				TargetAttributes = {
+					51ADC7D71C07F770002B3A1D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					51ADC7E51C07F770002B3A1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 51ADC7D71C07F770002B3A1D;
+					};
+					51ADC7F01C07F770002B3A1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 51ADC7D71C07F770002B3A1D;
+					};
 					51F785D81C07E30D003E37A2 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -223,11 +375,37 @@
 				51F785D81C07E30D003E37A2 /* experiments */,
 				51F785EE1C07E30D003E37A2 /* experimentsTests */,
 				51F785F91C07E30D003E37A2 /* experimentsUITests */,
+				51ADC7D71C07F770002B3A1D /* OSXExperiments */,
+				51ADC7E51C07F770002B3A1D /* OSXExperimentsTests */,
+				51ADC7F01C07F770002B3A1D /* OSXExperimentsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		51ADC7D61C07F770002B3A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADC7DD1C07F770002B3A1D /* Assets.xcassets in Resources */,
+				51ADC7E01C07F770002B3A1D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7E41C07F770002B3A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7EF1C07F770002B3A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F785D71C07E30D003E37A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +433,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		51ADC7D41C07F770002B3A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADC7DB1C07F770002B3A1D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7E21C07F770002B3A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADC7EB1C07F770002B3A1D /* OSXExperimentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADC7ED1C07F770002B3A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADC7F61C07F770002B3A1D /* OSXExperimentsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F785D51C07E30D003E37A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +486,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		51ADC7E81C07F770002B3A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51ADC7D71C07F770002B3A1D /* OSXExperiments */;
+			targetProxy = 51ADC7E71C07F770002B3A1D /* PBXContainerItemProxy */;
+		};
+		51ADC7F31C07F770002B3A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51ADC7D71C07F770002B3A1D /* OSXExperiments */;
+			targetProxy = 51ADC7F21C07F770002B3A1D /* PBXContainerItemProxy */;
+		};
 		51F785F11C07E30D003E37A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 51F785D81C07E30D003E37A2 /* experiments */;
@@ -297,6 +509,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		51ADC7DE1C07F770002B3A1D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51ADC7DF1C07F770002B3A1D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		51F785E21C07E30D003E37A2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,6 +536,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		51ADC7F81C07F770002B3A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperiments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperiments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		51ADC7F91C07F770002B3A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperiments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperiments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		51ADC7FA1C07F770002B3A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperimentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperimentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSXExperiments.app/Contents/MacOS/OSXExperiments";
+			};
+			name = Debug;
+		};
+		51ADC7FB1C07F770002B3A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperimentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperimentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSXExperiments.app/Contents/MacOS/OSXExperiments";
+			};
+			name = Release;
+		};
+		51ADC7FC1C07F770002B3A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperimentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperimentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = OSXExperiments;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		51ADC7FD1C07F770002B3A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXExperimentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.OSXExperimentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = OSXExperiments;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		51F786011C07E30D003E37A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +786,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		51ADC7FE1C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperiments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51ADC7F81C07F770002B3A1D /* Debug */,
+				51ADC7F91C07F770002B3A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		51ADC7FF1C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51ADC7FA1C07F770002B3A1D /* Debug */,
+				51ADC7FB1C07F770002B3A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		51ADC8001C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51ADC7FC1C07F770002B3A1D /* Debug */,
+				51ADC7FD1C07F770002B3A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		51F785D41C07E30C003E37A2 /* Build configuration list for PBXProject "experiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -488,6 +826,7 @@
 				51F786051C07E30D003E37A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F786061C07E30D003E37A2 /* Build configuration list for PBXNativeTarget "experimentsTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +835,7 @@
 				51F786081C07E30D003E37A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F786091C07E30D003E37A2 /* Build configuration list for PBXNativeTarget "experimentsUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +844,7 @@
 				51F7860B1C07E30D003E37A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
