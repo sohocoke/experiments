@@ -25,7 +25,7 @@ class MasterViewController: UITableViewController {
 //    let frame = CGRect(x: 0, y: 0, width: 800, height:600)
     let frame = self.view.bounds
     let config = WKWebViewConfiguration()
-    let web = WKWebView(frame: frame, configuration: nil)
+    let web = WKWebView(frame: frame, configuration: config)
     
 //    [self.wkWebView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
 //    [self.wkWebView setNavigationDelegate:self];
@@ -43,18 +43,18 @@ class MasterViewController: UITableViewController {
     self.webView = web
   }
   
-  var webView = WKWebView?
+  var webView: WKWebView!
   
   func showWebView__() {
     self.webView = WKWebView()
-    webView?.backgroundColor = UIColor.whiteColor()
-    webView?.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-    webView?.autoresizingMask = UIViewAutoresizing.FlexibleHeight
+    webView.backgroundColor = UIColor.whiteColor()
+    webView.autoresizingMask = UIViewAutoresizing.FlexibleWidth
+    webView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
     let url = NSURL(string:"https://www.bignerdranch.com")
     let req = NSURLRequest(URL:url!)
-    webView?.loadRequest(req)
+    webView.loadRequest(req)
     
-    self.view.addSubview((webView)!)
+    self.view.addSubview((webView))
 
   }
 
@@ -63,7 +63,7 @@ class MasterViewController: UITableViewController {
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-    let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+    let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(MasterViewController.insertNewObject(_:)))
     self.navigationItem.rightBarButtonItem = addButton
     if let split = self.splitViewController {
         let controllers = split.viewControllers

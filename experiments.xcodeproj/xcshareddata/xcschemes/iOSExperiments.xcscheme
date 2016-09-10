@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51F785D81C07E30D003E37A2"
-               BuildableName = "experiments.app"
-               BlueprintName = "experiments"
+               BuildableName = "iOSExperiments.app"
+               BlueprintName = "iOSExperiments"
                ReferencedContainer = "container:experiments.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51F785EE1C07E30D003E37A2"
-               BuildableName = "experimentsTests.xctest"
-               BlueprintName = "experimentsTests"
+               BuildableName = "iOSExperimentsTests.xctest"
+               BlueprintName = "iOSExperimentsTests"
                ReferencedContainer = "container:experiments.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51F785F91C07E30D003E37A2"
-               BuildableName = "experimentsUITests.xctest"
-               BlueprintName = "experimentsUITests"
+               BuildableName = "iOSExperimentsUITests.xctest"
+               BlueprintName = "iOSExperimentsUITests"
                ReferencedContainer = "container:experiments.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51F785D81C07E30D003E37A2"
-            BuildableName = "experiments.app"
-            BlueprintName = "experiments"
+            BuildableName = "iOSExperiments.app"
+            BlueprintName = "iOSExperiments"
             ReferencedContainer = "container:experiments.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51F785D81C07E30D003E37A2"
-            BuildableName = "experiments.app"
-            BlueprintName = "experiments"
+            BuildableName = "iOSExperiments.app"
+            BlueprintName = "iOSExperiments"
             ReferencedContainer = "container:experiments.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51F785D81C07E30D003E37A2"
-            BuildableName = "experiments.app"
-            BlueprintName = "experiments"
+            BuildableName = "iOSExperiments.app"
+            BlueprintName = "iOSExperiments"
             ReferencedContainer = "container:experiments.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

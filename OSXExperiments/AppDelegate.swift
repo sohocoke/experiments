@@ -34,7 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKScriptMessageHandler {
     
     button = NSButton(frame: CGRect(x: 30, y: 30, width: 100, height: 50))
     button.target = self
-    button.action = "onClick:"
+    button.action = #selector(AppDelegate.onClick(_:))
     view.addSubview(button)
     view.window?.makeFirstResponder(button)
 
