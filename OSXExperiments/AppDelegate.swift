@@ -70,7 +70,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKScriptMessageHandler {
     self.webView = WKWebView(frame: CGRect(x: 0, y: 50, width: 300, height: 300), configuration: config)
     view.addSubview(webView)
     
+    
+    
     self.load(self)
+    
+    self.evalJs()
   }
   
   func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
@@ -98,6 +102,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKScriptMessageHandler {
     // NEXT try replacing / replacing back.
   }
   
+  func evalJs() {
+    webView.evaluateJavaScript("return window") { (result, err) -> Void in
+      print("done.")
+    }
+  }
   func injectSelectorGadget() {
     let script = "function importJS(src, look_for, onload) {\n  var s = document.createElement('script');\n  s.setAttribute('type', 'text/javascript');\n  s.setAttribute('src', src);\n  if (onload) wait_for_script_load(look_for, onload);\n  var head = document.getElementsByTagName('head')[0];\n  if (head) {\n    head.appendChild(s);\n  } else {\n    document.body.appendChild(s);\n  }\n}\n\nfunction importCSS(href, look_for, onload) {\n  var s = document.createElement('link');\n  s.setAttribute('rel', 'stylesheet');\n  s.setAttribute('type', 'text/css');\n  s.setAttribute('media', 'screen');\n  s.setAttribute('href', href);\n  if (onload) wait_for_script_load(look_for, onload);\n  var head = document.getElementsByTagName('head')[0];\n  if (head) {\n    head.appendChild(s);\n  } else {\n    document.body.appendChild(s);\n  }\n}\n\nfunction wait_for_script_load(look_for, callback) {\n  var interval = setInterval(function() {\n    // if (eval('typeof ' + look_for) != 'undefined') {\n    if (typeof(lookfor) != 'undefined') {\n      clearInterval(interval);\n      callback();\n    }\n  }, 50);\n}\n\n(function(){\n  importCSS('https://dv0akt2986vzh.cloudfront.net/stable/lib/selectorgadget.css');\n  importJS('https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.\n    jQuery.noConflict();\n    importJS('https://dv0akt2986vzh.cloudfront.net/stable/vendor/diff/diff_match_patch.js', 'diff_match_patch', function() {\n      importJS('https://dv0akt2986vzh.cloudfront.net/stable/lib/dom.js', 'DomPredictionHelper', function() {\n        importJS('https://dv0akt2986vzh.cloudfront.net/stable/lib/interface.js');\n      });\n    });\n  });\n})();"
     webView.evaluateJavaScript(script) { (a: AnyObject?, e: NSError?) -> Void in

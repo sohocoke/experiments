@@ -65,6 +65,9 @@
 		51ADC7F11C07F770002B3A1D /* OSXExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXExperimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ADC7F51C07F770002B3A1D /* OSXExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXExperimentsUITests.swift; sourceTree = "<group>"; };
 		51ADC7F71C07F770002B3A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D799431D84376800E1E872 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		51D799441D84376800E1E872 /* Scrolling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scrolling.playground; sourceTree = "<group>"; };
+		51D799451D84376800E1E872 /* WKWebView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WKWebView.playground; sourceTree = "<group>"; };
 		51F785D91C07E30D003E37A2 /* experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F785DC1C07E30D003E37A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F785DE1C07E30D003E37A2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +82,6 @@
 		51F785FA1C07E30D003E37A2 /* experimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = experimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F785FE1C07E30D003E37A2 /* experimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experimentsUITests.swift; sourceTree = "<group>"; };
 		51F786001C07E30D003E37A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51F7860C1C07E34D003E37A2 /* WKWebView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = WKWebView.playground; path = experiments/WKWebView.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,10 +159,20 @@
 			path = OSXExperimentsUITests;
 			sourceTree = "<group>";
 		};
+		51D799421D84376800E1E872 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				51D799431D84376800E1E872 /* MyPlayground.playground */,
+				51D799441D84376800E1E872 /* Scrolling.playground */,
+				51D799451D84376800E1E872 /* WKWebView.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 		51F785D01C07E30C003E37A2 = {
 			isa = PBXGroup;
 			children = (
-				51F7860C1C07E34D003E37A2 /* WKWebView.playground */,
+				51D799421D84376800E1E872 /* Playgrounds */,
 				51ADC7D91C07F770002B3A1D /* OSXExperiments */,
 				51F785DB1C07E30D003E37A2 /* experiments */,
 				51F785F21C07E30D003E37A2 /* experimentsTests */,
@@ -793,6 +805,7 @@
 				51ADC7F91C07F770002B3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51ADC7FF1C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsTests" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +814,7 @@
 				51ADC7FB1C07F770002B3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51ADC8001C07F770002B3A1D /* Build configuration list for PBXNativeTarget "OSXExperimentsUITests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +823,7 @@
 				51ADC7FD1C07F770002B3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F785D41C07E30C003E37A2 /* Build configuration list for PBXProject "experiments" */ = {
 			isa = XCConfigurationList;
