@@ -9,15 +9,18 @@ var str = "Hello, playground"
 
 
 class MyViewController: NSViewController {
-//  override func loadView() {
-//  }
+  override func loadView() {
+    self.view = NSView(frame: NSZeroRect)
+//    super.loadView()
+  }
 }
 
 let viewController = MyViewController(nibName: nil, bundle: nil)!
 
 let button = NSButton(frame: NSRect(x: 0, y: 0, width: 200, height: 200))
 
-viewController.setView
+viewController.view.addSubview(button)
+
 
 //XCPlaygroundPage.currentPage.liveView = button
 
