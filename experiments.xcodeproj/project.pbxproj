@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510EC0B11D8832D000B6B64D /* ExperimentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D7994B1D8438EF00E1E872 /* ExperimentsFramework.framework */; };
 		51ADC7EB1C07F770002B3A1D /* OSXExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADC7EA1C07F770002B3A1D /* OSXExperimentsTests.swift */; };
 		51ADC7F61C07F770002B3A1D /* OSXExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADC7F51C07F770002B3A1D /* OSXExperimentsUITests.swift */; };
 		51D7994E1D8438EF00E1E872 /* ExperimentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D7994D1D8438EF00E1E872 /* ExperimentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -134,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510EC0B11D8832D000B6B64D /* ExperimentsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1011,7 @@
 				51D799751D84479C00E1E872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F785D41C07E30C003E37A2 /* Build configuration list for PBXProject "experiments" */ = {
 			isa = XCConfigurationList;

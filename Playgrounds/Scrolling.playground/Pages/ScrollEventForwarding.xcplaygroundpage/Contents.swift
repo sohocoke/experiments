@@ -25,7 +25,6 @@ class MyView: NSButton {
 
 
 let view = MyView(frame: NSMakeRect(0,0,300,500))
-//XCPlaygroundPage.currentPage.liveView = view
 
 let scrollView = NSScrollView(frame: NSMakeRect(0,0,300,300))
 scrollView.documentView = view
